@@ -1,6 +1,4 @@
 
-  
-
 <!DOCTYPE html>
 
 <head>
@@ -37,7 +35,7 @@
             }
 
             getRandomNumber = () => {
-                return Math.floor((Math.random() * 15) + 1);
+                return Math.floor((Math.random() * 100) + 1);
             }
 
             newGame = () => {
@@ -54,19 +52,19 @@
                 let numberOfGuessing = this.state.numberOfGuessing + 1;
                 if (inputValue > this.state.randomNumber) {
                     this.setState({
-                        message: "You guess the number is bigger than my number",
+                        message: "số Giang đoán lớn hơn số của t rồi",
                         numberOfGuessing
                     })
                 } else if (inputValue < this.state.randomNumber) {
                     this.setState({
-                        message: "You guess the number is smaller than my number",
+                        message: "số Giang đoán nhỏ hơn số của t rồi",
                         numberOfGuessing
                     })
                 } else {
                     this.setState({
-                        message: "You win!"
+                        message: "Đù, Giang xinh đẹp thắng cmnr"
                     })
-                    alert("Giang đã thắng. Giang xinh đẹp vkl :>>" + ", Your score: " + numberOfGuessing)
+                    alert("Đù, Giang xinh đẹp thắng cmnr.")
                     this.newGame()
                 }
             }
@@ -74,7 +72,7 @@
             checkLose = () => {
                 let { numberOfGuessing } = this.state
                 if (numberOfGuessing > 5) {
-                    alert("Thua rồi, Giang chánh tró")
+                    alert("Giang chảnh tró thua Đức Anh đẹp zai rồi, ahaha")
                 }
             }
 
@@ -90,7 +88,7 @@
                         {/* Header */}
                         <div className="jumbotron text-center">
                             <h1>Getting random number</h1>
-                            <p>Chào Giang, t đã chọn một số random trong khoảng 1 đến 15, đố Giang đoán được? (chỉ được đoán 5 lần thôi nhé :))</p>
+                            <p>Chào Giang,t đã chọn một số random trong khoảng 1 đến 15, Giang có thể đoán được trong 3 lần?</p>
                         </div>
                         { /* Body */}
                         <div className="body">
@@ -112,4 +110,3 @@
 
 
 </body>
-
