@@ -35,7 +35,7 @@
             }
 
             getRandomNumber = () => {
-                return Math.floor((Math.random() * 100) + 1);
+                return Math.floor((Math.random() * 10) + 1);
             }
 
             newGame = () => {
@@ -52,12 +52,12 @@
                 let numberOfGuessing = this.state.numberOfGuessing + 1;
                 if (inputValue > this.state.randomNumber) {
                     this.setState({
-                        message: "You guess the number is big",
+                        message: "You guess the number is bigger than my number",
                         numberOfGuessing
                     })
                 } else if (inputValue < this.state.randomNumber) {
                     this.setState({
-                        message: "You guess the number is small",
+                        message: "You guess the number is smaller than my number",
                         numberOfGuessing
                     })
                 } else {
@@ -71,7 +71,7 @@
 
             checkLose = () => {
                 let { numberOfGuessing } = this.state
-                if (numberOfGuessing > 10) {
+                if (numberOfGuessing > 5) {
                     alert("You lose")
                 }
             }
@@ -88,7 +88,7 @@
                         {/* Header */}
                         <div className="jumbotron text-center">
                             <h1>Getting random number</h1>
-                            <p>Tôi đã chọn một số random trong khoảng 1 đến 100, bạn có thể đoán được?</p>
+                            <p>Chào Giang, tôi đã chọn một số random trong khoảng 1 đến 10, đố bạn đoán được?</p>
                         </div>
                         { /* Body */}
                         <div className="body">
