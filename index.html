@@ -51,7 +51,7 @@
             guess = () => {
                 let { inputValue } = this.state;
                 let numberOfGuessing = this.state.numberOfGuessing + 1;
-              if ( numberOfGuessing<6){
+              if ( numberOfGuessing<8){
 		 if (inputValue > this.state.randomNumber) {
                     this.setState({
                         message: "số Giang đoán lớn hơn số của t rồi",
@@ -70,7 +70,7 @@
                     this.newGame()
                 }
             } else {
-                    alert("Chúc mừng bạn đã thua Đức Anh đẹp zai rồi, ahaha")
+                    alert("Chúc mừng bạn đã thua Đức Anh đẹp zai rồi, chơi lại nhé, ahaha")
 this.newGame()
                 }
             }
@@ -87,7 +87,7 @@ this.newGame()
                         {/* Header */}
                         <div className="jumbotron text-center">
                             <h1>Getting random number</h1>
-                            <p>Chào Giang xinh đẹp (t khen đểu), t đã chọn một số random trong khoảng 1 đến 20, Giang đoán được trong 5 lần chứ?</p>
+                            <p>Chào Giang xinh đẹp (t khen đểu), t đã chọn một số random trong khoảng 1 đến 20, Giang đoán được trong 7 lần chứ?</p>
                         </div>
                         { /* Body */}
                         <div className="body">
