@@ -37,7 +37,7 @@
             }
 
             getRandomNumber = () => {
-                return Math.floor((Math.random() * 10) + 1);
+                return Math.floor((Math.random() * 15) + 1);
             }
 
             newGame = () => {
@@ -73,7 +73,7 @@
 
             checkLose = () => {
                 let { numberOfGuessing } = this.state
-                if (numberOfGuessing > 3) {
+                if (numberOfGuessing > 5) {
                     alert("Thua rồi, Giang chánh tró")
                 }
             }
@@ -90,7 +90,7 @@
                         {/* Header */}
                         <div className="jumbotron text-center">
                             <h1>Getting random number</h1>
-                            <p>Chào Giang, t đã chọn một số random trong khoảng 1 đến 10, đố Giang đoán được? (chỉ được đoán 3 lần thôi nhé :))</p>
+                            <p>Chào Giang, t đã chọn một số random trong khoảng 1 đến 15, đố Giang đoán được? (chỉ được đoán 5 lần thôi nhé :))</p>
                         </div>
                         { /* Body */}
                         <div className="body">
