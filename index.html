@@ -1,26 +1,4 @@
-Skip to content
-Search or jump to…
 
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@nguyenducanhdeptrai 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-nguyenducanhdeptrai
-/
-nguyenducanhdeptrai.github.io
-1
-00
- Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
-nguyenducanhdeptrai.github.io/index.html
-@nguyenducanhdeptrai nguyenducanhdeptrai Update index.html
-5c9da48 18 seconds ago
-112 lines (97 sloc)  4.24 KB
   
 
 <!DOCTYPE html>
@@ -95,7 +73,7 @@ nguyenducanhdeptrai.github.io/index.html
 
             checkLose = () => {
                 let { numberOfGuessing } = this.state
-                if (numberOfGuessing > 5) {
+                if (numberOfGuessing > 3) {
                     alert("Thua rồi, Giang chánh tró")
                 }
             }
@@ -112,7 +90,7 @@ nguyenducanhdeptrai.github.io/index.html
                         {/* Header */}
                         <div className="jumbotron text-center">
                             <h1>Getting random number</h1>
-                            <p>Chào Giang, t đã chọn một số random trong khoảng 1 đến 10, đố Giang đoán được?</p>
+                            <p>Chào Giang, t đã chọn một số random trong khoảng 1 đến 10, đố Giang đoán được? (chỉ được đoán 3 lần thôi nhé :))</p>
                         </div>
                         { /* Body */}
                         <div className="body">
@@ -134,15 +112,4 @@ nguyenducanhdeptrai.github.io/index.html
 
 
 </body>
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+
