@@ -64,7 +64,7 @@
                     this.setState({
                         message: "You win!"
                     })
-                    alert("You win" + ", Your score: " + numberOfGuessing)
+                    alert("Giang đã thắng. Giang xinh đẹp vkl :>>" + ", Your score: " + numberOfGuessing)
                     this.newGame()
                 }
             }
@@ -72,7 +72,7 @@
             checkLose = () => {
                 let { numberOfGuessing } = this.state
                 if (numberOfGuessing > 5) {
-                    alert("You lose")
+                    alert("Thua rồi, Giang chánh tró")
                 }
             }
 
@@ -88,14 +88,14 @@
                         {/* Header */}
                         <div className="jumbotron text-center">
                             <h1>Getting random number</h1>
-                            <p>Chào Giang, tôi đã chọn một số random trong khoảng 1 đến 10, đố bạn đoán được?</p>
+                            <p>Chào Giang, t đã chọn một số random trong khoảng 1 đến 10, đố Giang đoán được?</p>
                         </div>
                         { /* Body */}
                         <div className="body">
                             <button onClick={() => this.newGame()}>New Game</button>
                             <hr/>
-                            <p className="font-weight-bold">Số lần bạn đã đoán là: { this.state.numberOfGuessing }</p>
-                            <p className="font-weight-bold">Số bạn đoán là</p>
+                            <p className="font-weight-bold">Số lần Giang đã đoán là: { this.state.numberOfGuessing }</p>
+                            <p className="font-weight-bold">Số Giang đoán là</p>
                             <input type="number" value={this.state.inputValue} onChange={this.onValueChange}/>
                             <button className="btn-success" onClick={() => this.guess()}> Đoán </button>
                             <p>{ this.state.message }</p>
